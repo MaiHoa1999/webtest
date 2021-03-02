@@ -1,0 +1,76 @@
+// a
+// 	+hover-underline(95%, $main)
+.news-list
+	+gg-speed(auto, $container)
+// main
+// 	padding-top: 70px
+// 	@media(min-width: 769px)
+// 		padding-top: 113px
+.dropdown
+	position: relative
+	cursor: pointer
+	.dropdown-menu
+		position: absolute
+		top: 150%
+		right: 0
+		width: max-content
+		background: $body
+		border: 1px solid $main
+		padding: 10px 15px
+		opacity: 0
+		pointer-events: none
+		transition: .2s ease-in-out all
+		z-index: 11
+	a
+		transition: .2s ease-in-out all
+		&:hover
+			color: $main
+	&.active, &:hover
+		.dropdown-menu
+			top: 100%
+			pointer-events: auto
+			opacity: 1
+.back-to-top
+	position: fixed
+	width: 60px
+	height: 60px
+	border-radius: 50%
+	border: 1px solid $main
+	display: flex
+	justify-content: center
+	align-items: center
+	bottom: 55px
+	right: 15px
+	z-index: 999
+	transition: .2s ease-in-out all
+	cursor: pointer
+	opacity: 0
+	pointer-events: none
+	em
+		font-size: 20px
+		color: $main
+		transition: .2s ease-in-out all
+	&:hover
+		background: $main
+		em
+			color: #ffffff
+	&.active
+		opacity: 1
+		pointer-events: auto
+	@media(max-width: 576px)
+		width: 35px
+		height: 35px
+		background: $body
+		em
+			font-size: 14px
+
+.full-content
+	+text-gray
+	*
+		+text-gray
+		+ *
+			margin-top: 15px
+	li
+		margin-top: 10px
+ul.type-none
+	+type-none

@@ -1,0 +1,162 @@
+section.wrap-post-list
+	.container
+		.primary-nav
+			ul
+				li.active
+					a(href="") Giới thiệu tổng quan 
+				li
+					a(href="") Giới thiệu tổng quan 
+				li
+					a(href="") Giới thiệu tổng quan
+		.post-wrap
+			.section-title2
+				.img
+					img(src="./img/bg-title.png", alt="")
+				p Tin tức TLM Corp
+			.row
+				-for(x=0;x<6;x++)
+					.col-lg-4.col-md-6
+						.box-item
+							.img.zoom-img
+								a(href="")
+									img(data-src="./img/tin-tuc/t1.png" alt="" class="lazyload")
+							.wrap-text
+								a(href="#").title BĐS phía Đông TP.HCM tiếp tục tăng nhiệt
+								.desc Lợi thế hạ tầng giao thông đồng bộ, kinh tế phát triển của Nhơn
+								a(href="#").view-detail Xem thêm
+								time 15.09.2020 
+
+//-  .wrap-post-list
+//-     .filed-nav
+//-         ul.type-none
+//-             li
+//-                 a(data-scroll="tab-1") Tin nội bộ
+//-             li
+//-                 a(data-scroll="tab-2") Tin Chuyên Ngành
+//-             li
+//-                 a(data-scroll="tab-3") Hình ảnh
+//-             li
+//-                 a(data-scroll="tab-4") Video
+//-             li
+//-                 a(data-scroll="tab-5") Download
+//-     .post-list(setBackground="./img/h5-bg.png")#tab-1
+//-         .wrap-post
+//-             .container
+//-                 .row
+//-                     .col-xl-3
+//-                         h2.title-small Tin nổi bật
+//-                     .col-xl-9
+//-                         .home-5(setBackground="./img/h5-bg.png")
+//-                             .wrap-big
+//-                                 .img.zoom-img
+//-                                     a(href="")
+//-                                         img(data-src="./img/h5-imgBig.png" alt="" class="lazyload")
+//-                                 .wrap-text
+//-                                     .date 28
+//-                                         span 10-2020
+//-                                     .wrap-left
+//-                                         a(href="").title-link THAY ĐỔI CÁCH NHÌN VỀ SẢN XUẤT XI MĂNG
+//-                                         a(href="").view-detail Xem chi tiết
+//-                             .wrap-small
+//-                                 .swiper-container
+//-                                     .swiper-wrapper
+//-                                         -for(i=0;i<6;i++)
+//-                                             .swiper-slide
+//-                                                 a(href="").box-post-small
+//-                                                     .img.zoom-img
+//-                                                         img(data-src="./img/h5-2.png" alt="" class="lazyload")
+//-                                                         .date 28
+//-                                                             span 10-2020
+//-                                                     .wrap-title CẠNH TRANH BẰNG SẢN PHẨM KHÁC BIỆT
+//-                                                     .view-detail Xem Chi tiết
+//-     .post-list-2#tab-2
+//-         .container
+//-             .row
+//-                 .col-xl-3
+//-                     h2.title-small.white Tin Chuyên Ngành
+//-                 .col-xl-9
+//-                     .swiper-container
+//-                         .swiper-wrapper
+//-                             -for(i=0;i<11;i++)
+//-                                 .swiper-slide
+//-                                     a(href="").wrap-post-list-sm
+//-                                         .img.zoom-img
+//-                                             img(data-src="./img/tin-tuc/tt-1.png" alt="" class="lazyload")
+//-                                             .date 28
+//-                                                 span 10-2020
+//-                                         .wrap-text
+//-                                             p CẠNH TRANH BẰNG SẢN PHẨM KHÁC BIỆT
+//-     .post-list-3#tab-3
+//-         .container
+//-             .row
+//-                 .col-xl-3
+//-                     h2.title-small Hình ảnh
+//-                 .col-xl-9
+//-                     .row
+//-                         .col-lg-12
+//-                             a(href="").wrap-post-list-big
+//-                                 .img.zoom-img
+//-                                     img(data-src="./img/tin-tuc/tt-1.png" alt="" class="lazyload")
+//-                                     .date 28
+//-                                         span 10-2020
+//-                                 .wrap-text
+//-                                     p CẠNH TRANH BẰNG SẢN PHẨM KHÁC BIỆT
+//-                     .swiper-container
+//-                         .swiper-wrapper
+//-                             -for(i=0;i<11;i++)
+//-                                 .swiper-slide
+//-                                     a(href="").wrap-post-list-sm
+//-                                         .img.zoom-img
+//-                                             img(data-src="./img/tin-tuc/tt-1.png" alt="" class="lazyload")
+//-                                             .date 28
+//-                                                 span 10-2020
+//-                                         .wrap-text
+//-                                             p CẠNH TRANH BẰNG SẢN PHẨM KHÁC BIỆT
+//-     .post-list-3(setBackground="./img/tin-tuc/bg-tt-3.png")#tab-4
+//-         .container
+//-             .row
+//-                 .col-xl-3
+//-                     h2.title-small Video
+//-                 .col-xl-9
+//-                     .row
+//-                         .col-lg-12
+//-                             a(href="").wrap-post-list-big
+//-                                 .img.zoom-img
+//-                                     img(data-src="./img/tin-tuc/tt-1.png" alt="" class="lazyload")
+//-                                     .date 28
+//-                                         span 10-2020
+//-                                 .wrap-text
+//-                                     p CẠNH TRANH BẰNG SẢN PHẨM KHÁC BIỆT
+//-                     .swiper-container
+//-                         .swiper-wrapper
+//-                             -for(i=0;i<11;i++)
+//-                                 .swiper-slide
+//-                                     a(href="").wrap-post-list-sm
+//-                                         .img.zoom-img
+//-                                             img(data-src="./img/tin-tuc/tt-1.png" alt="" class="lazyload")
+//-                                             .date 28
+//-                                                 span 10-2020
+//-                                         .wrap-text
+//-                                             p CẠNH TRANH BẰNG SẢN PHẨM KHÁC BIỆT
+//-     .post-list-4#tab-5
+//-         .container
+//-             h2.title-small Download
+//-             .wrap-row
+//-                 -for(i=0;i<10;i++)
+//-                     .box-item
+//-                         .img
+//-                             a(href="").zoom-img
+//-                                 img(data-src="./img/tin-tuc/tt-1.png" alt="" class="lazyload")
+//-                         .wrap-text
+//-                             .title Brochure SP Xi măng
+//-                                 br
+//-                                 | PCB40-MS
+//-                             a(href="") Tải về
+//-                                 em.material-icons south
+
+
+
+
+
+
+

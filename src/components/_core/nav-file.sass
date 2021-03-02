@@ -1,0 +1,68 @@
+.filed-nav
+    display: flex
+    width: 100%
+    justify-content: center
+    @media screen and ( min-width: 992px )
+        position: sticky
+        top: 82px
+        z-index: 9999
+    ul
+        display: flex
+        align-items: center
+        margin-top: -22px
+        z-index: 99
+        &::-webkit-scrollbar
+            height: 4px
+        &::-webkit-scrollbar-thumb
+            background: $main
+        &::-webkit-scrollbar-thumb:hover
+            background: $main
+        @media screen and ( max-width: 1200px )
+            overflow: auto
+            padding-bottom: 8px
+            scroll-snap-type: x mandatory
+        li
+            position: relative
+            scroll-snap-align: start
+            &+li
+                margin-left: 10px
+            &.active
+                a
+                    background-color: $main
+                    color: white
+            a
+                display: flex
+                align-items: center
+                justify-content: center
+                border-radius: 0 15px 0 15px
+                overflow: hidden
+                height: 68px
+                padding: 0 20px
+                box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16)
+                background-color: white
+                z-index: 99
+                color: #000000
+                font-size: r(20px)
+                font-weight: 700
+                position: relative
+                transition: .3s all  ease-in-out
+                white-space: nowrap
+                cursor: pointer
+                &.active
+                    background-color: $main
+                    color: white
+                &:hover
+                    color: white
+                    &::before
+                        left: 0
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 0
+                    left: -100%
+                    width: 100%
+                    height: 100%
+                    background-color: $main
+                    transition: .3s all  ease-in-out
+                    z-index: -1
+

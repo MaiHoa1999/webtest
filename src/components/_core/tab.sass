@@ -1,0 +1,26 @@
+.global-tab
+	.tab-wrap
+		ul
+			display: flex
+			justify-content: center
+			align-items: center
+		li
+			padding: 20px 40px
+			margin-right: 2px
+			background: $body
+			font-size: 16px
+			@media(max-width: 576px)
+				padding: 10px 20px
+			a
+				color: $color-99
+				font-weight: 600
+			&:hover
+				cursor: pointer
+				background: $bg-gradient2
+				a
+					color: $body
+			&:active
+				cursor: pointer
+				background: $bg-gradient2
+				a
+					color: $body

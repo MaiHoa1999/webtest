@@ -1,0 +1,199 @@
+.wrap-post-detail
+	background-image: url(../img/tin-tuc/bntt.png)
+	
+	.post-content
+		padding: 30px 150px
+		@media(max-width: 1024px)
+			padding: 30px 0
+		.heading-wrap
+			.title
+				font-size: 30px
+				font-weight: 600
+				color: $main
+				border-bottom: 1px solid $main
+				padding-bottom: 10px
+				@media(max-width: 768px)
+					font-size: 25px
+			ul
+				display: flex
+				padding: 10px 0
+				border-bottom: 1px solid #e1e1e1
+				li
+					padding: 0 20px
+					font-size: 16px
+					font-weight: 500
+					color: $color-33
+					position: relative
+				
+						
+					@media(max-width: 576px)
+						font-size: 14px
+						padding: 0 10px
+					&:first-child
+						padding-left: 0
+						&::before
+							display: none
+							
+						
+					&::before
+						position: absolute
+						content: ""
+						top: 50%
+						left: 0
+						transform: translateY(-50%)
+						width: 1px
+						height: 18px
+						background: $main
+			.time
+				span
+					font-size: 12px
+					color: $color-99
+			.share
+				display: flex
+				justify-content: center
+				align-items: center
+				p
+					padding-right: 10px
+		.wrap-content
+			padding: 20px 0
+			strong
+				font-size: 16px
+				color: $color-33
+				font-weight: 600
+				line-height: 1.8
+				
+		
+			p
+				font-size: 16px
+				line-height: 1.8
+			img
+				padding: 20px 0
+			h3
+				font-size: 20px
+				color: $main-2
+				padding: 20px 0			
+	.wrap-post-related
+		background-image: url(../img/tin-tuc/bndt.png)
+		padding: 30px 0
+		.slider
+			position: relative
+			.button-slider
+				.button-prev,.button-next	
+					position: absolute
+					top: 50%
+					transform: translateY(-50%)
+				.button-prev
+					left: -65px
+				.button-next
+					right: -65px
+				
+				@media screen and ( max-width: 1280px )
+					
+			
+					.button-next, .button-prev
+						position: static 
+						top: auto 
+						right: auto 
+						left: auto
+						bottom: auto 
+						transform: none
+						display: flex
+						align-items: center
+						justify-content: center
+						padding-top: 10px
+						// margin: 20px
+
+
+						
+	 // .post-detail
+//     .col-lg-10, .col-lg-11
+//         margin: 0 auto
+//     .wrap-header
+//         display: flex
+//         // padding-left: 90px
+//         margin-bottom: 79px
+//         @media screen and ( max-width: 992px )
+//             padding-left: 0px
+//         @media screen and ( max-width: 575px )
+//             flex-wrap: wrap
+//         @media screen and ( max-width: 992px )
+//             margin-bottom: 30px
+//         .date
+//             height: 124px
+//             flex: 0 0 127px
+//             background-color: $main
+//             display: flex
+//             flex-direction: column
+//             align-items: center
+//             justify-content: center
+//             color: #ffffff
+//             font-weight: 400
+//             letter-spacing: 0.36px
+//             font-size: 48px
+//             line-height: 1.2
+//             @media screen and ( max-width: 575px )
+//                 flex: 0 0 100%
+//                 height: 80px
+//                 line-height: 1
+//             span
+//                 font-size: 18px
+//         .text
+//             padding-left: 17px
+//             @media screen and ( max-width: 575px )
+//                 padding-left: 0
+//                 margin-top: 20px
+//             .cate
+//                 color: $main
+//                 font-size: r(20px)
+//                 font-weight: 700
+//             .title
+//                 color: #1a1a1a
+//                 font-size: 1.8rem
+//                 font-weight: 700
+//                 line-height: 1.2
+//                 text-transform: uppercase
+//                 +rgtext(2)
+//                 @media screen and ( max-width: 1280px )
+//                     font-size: r(30px)
+//                 @media screen and ( max-width: 768px )
+//                     font-size: r(25px)
+//                     +rgtext(3)
+//     .wrap-content
+//         width: 100%
+//         padding: 57px 90px 77px 90px
+//         background-color: #ffffff
+//         @media screen and ( max-width: 992px )
+//             padding: 57px 30px 77px 30px
+//         p
+//             color: #1a1a1a
+//             font-family: "Playfair Display"
+//             font-size: r(20px)
+//             font-weight: 400
+//             line-height: 35px
+//             &+p
+//                 margin-top: r(35px)
+//         .tac-gia
+//             text-align: right
+//             color: #000000
+//             font-size: r(20px)
+//             font-style: italic
+//             text-decoration: underline
+//             margin-top: 12px
+//     .wrap-post-related
+//         margin-top: r(120px)
+//         @media screen and ( max-width: 768px )
+//             margin-top: r(60px)
+//         .wrap-post-list-sm
+//             margin-bottom: 30px
+//             @media screen and ( max-width: 575px )
+//                 flex-wrap: wrap
+//         .xem-them
+//             color: #000000
+//             font-family: Lato
+//             font-size: r(24px)
+//             font-weight: 500
+//             letter-spacing: 0.24px
+//             text-align: left
+//             text-decoration: underline
+//             margin-top: -10px
+//             display: block

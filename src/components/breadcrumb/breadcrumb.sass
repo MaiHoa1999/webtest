@@ -1,0 +1,60 @@
+.global-breadcrumb
+	width: 100%
+	position: absolute
+	transform: translateY(-100px)
+	background-color: transparent
+	.breadcrumb
+		display: flex
+		align-items: center
+		background-color: transparent
+		flex-wrap: wrap
+		padding: 10px 0
+		list-style: none
+		margin-bottom: 0
+		justify-content: center
+		li
+			position: relative
+			padding: 0 15px
+			display: flex
+			align-items: center
+			a
+				font-size: 16px
+				color: $white
+				font-weight: 700
+				text-decoration: none
+				transition: .2s all
+				@media(max-width: 991.98px)
+					font-size: 10px
+			// &.active
+			// 	a 
+			// 		color: $main-color
+			&:hover
+				a
+					color: $main-2
+
+			&:first-child
+				padding-left: 0
+				a
+					font-size: 0
+					&::after
+						font-family: 'remixicon'
+						font-size: 16px
+						content: "\ee20"
+						color: $white
+
+		li+li
+			&::before
+				position: absolute
+				top: 50%
+				left: -7px
+				transform: translateY(-50%)
+				font-family: Material Icons
+				font-size: 18px
+				content: "keyboard_arrow_right"
+				color: $white
+
+	@media(min-width: 768.98px)
+		margin-bottom: 0
+
+	@media(min-width: 320px)
+		margin-bottom: 0

@@ -1,0 +1,240 @@
+.zoom-img
+    overflow: hidden
+    &:hover
+        img
+            transform: scale(1.05)
+    img
+        transition: .3s all  ease-in-out
+@keyframes Toptodown
+    from
+        color: #000000
+    to
+        color: $white
+@keyframes $zoom
+    from
+        transform: scale(1)
+    to
+        transform: scale(1.2)
+.div
+    animation: zoom linear .2s
+@keyframes moveInLeft
+    0%
+        opacity: 0
+        transform: translateX(-10rem)
+
+
+    80%
+        transform: translateX(1rem)
+
+
+    100%
+        opacity: 1
+        transform: translateX(0)
+
+
+
+@keyframes moveInRight
+    0%
+        opacity: 0
+        transform: translateX(10rem)
+    80%
+        transform: translateX(-1rem)
+    100%
+        opacity: 1
+        transform: translateX(0)
+
+
+
+@keyframes moveInBottom
+    0%
+        opacity: 0
+        transform: translateY(3rem)
+
+
+    100%
+        opacity: 1
+        transform: translateY(0)
+
+@-webkit-keyframes returnToNormal
+    from
+    opacity: 0
+    -webkit-transform: translate3d(0, 100%, 0)
+    transform: translate3d(0, 100%, 0)
+    to
+    opacity: 1
+    -webkit-transform: none
+    transform: none
+@keyframes returnToNormal
+    from
+        opacity: 0
+        -webkit-transform: translate3d(0, 100%, 0)
+        transform: translate3d(0, 100%, 0)
+    to
+        opacity: 1
+        -webkit-transform: none
+        transform: none
+
+
+@keyframes growth
+    from
+        transform: scale(.7)
+    to
+        transform: scale(1)
+@keyframes fade-in
+    from
+        opacity: 0
+    to
+        opacity: 1
+@keyframes backInDown
+    0%
+        transform: translateY(-1200px) scale(.7)
+        opacity: .7
+    50%
+        transform: translateY(0px) scale(.7)
+        opacity: .7
+    100%
+        transform: scale(1)
+        opacity: 1
+
+@keyframes backInUp
+    0%
+        transform: translateY(1200px) scale(.7)
+        opacity: .7
+    80%
+        transform: translateY(0px) scale(.7)
+        opacity: .7
+
+
+    100%
+        transform: scale(1)
+        opacity: 1
+@keyframes backInLeft
+    0%
+        transform: translateX(-2000px) scale(.7)
+        opacity: .7
+
+
+    80%
+        transform: translateX(0px) scale(.7)
+        opacity: .7
+
+
+    100%
+        transform: scale(1)
+        opacity: 1
+@keyframes fadeInTopLeft
+    from
+        opacity: 0
+        transform: translate3d(-15%, -180%, 0)
+    to
+        opacity: 1
+        transform: translateZ(0)
+@keyframes fadeInTopRight
+    0%
+        opacity: 0
+        transform: translate3d(100%, -100%, 0)
+    to
+        opacity: 1
+        -webkit-transform: translateZ(0)
+        transform: translateZ(0)
+@keyframes flipInX
+    0%
+        -webkit-transform: perspective(1200px) rotateX(90deg)
+        transform: perspective(1200px) rotateX(90deg)
+        -webkit-animation-timing-function: ease-in
+        animation-timing-function: ease-in
+        opacity: 0
+
+    40%
+        -webkit-transform: perspective(1200px) rotateX(-20deg)
+        transform: perspective(1200px) rotateX(-20deg)
+        -webkit-animation-timing-function: ease-in
+        animation-timing-function: ease-in
+
+    60%
+        -webkit-transform: perspective(1200px) rotateX(10deg)
+        transform: perspective(1200px) rotateX(10deg)
+        opacity: 1
+
+    80%
+        -webkit-transform: perspective(1200px) rotateX(-5deg)
+        transform: perspective(1200px) rotateX(-5deg)
+
+    to
+        -webkit-transform: perspective(1200px)
+        transform: perspective(1200px)
+
+@media screen and ( min-width: 1200px )
+    .animate__animated
+        -webkit-animation-duration: 1s
+        animation-duration: 1s
+        -webkit-animation-duration: 1s
+        animation-duration: 1s
+        -webkit-animation-fill-mode: both
+        animation-fill-mode: both
+    .animation-left
+        opacity: 0
+        transition: 2s all cubic-bezier(0.22, 0.44, 0, 1)
+        transform: translateX(-300px)
+    .animation-right
+        opacity: 0
+        transition: 2s all cubic-bezier(0.22, 0.44, 0, 1)
+        transform: translateX(300px)
+    .animation-bottom
+        opacity: 0
+        transition: 2s all cubic-bezier(0.22, 0.44, 0, 1)
+        transform: translateY(300px)
+    .animation-top
+        opacity: 0
+        transition: 2s all cubic-bezier(0.22, 0.44, 0, 1)
+        transform: translateY(-300px)
+    &
+        .animation-left
+            opacity: 1
+            transform: translateX(0)
+        .animation-right
+            opacity: 1
+            transform: translateX(0)
+        .animation-bottom
+            opacity: 1
+            transform: translateY(0)
+        .animation-top
+            opacity: 1
+            transform: translateY(0)
+        .fadeInTopLeft,.fadeInTopRight
+            opacity: 0
+    .current-page
+        .backInLeft
+            -webkit-animation: backInLeft 1s
+            animation: backInLeft 1s
+            -webkit-animation-timing-function: ease-out
+            animation-timing-function: ease-out
+        .backInUp
+            animation: backInUp 1s
+            animation-timing-function: ease-out
+        .fadeInTopLeft
+            animation: fadeInTopLeft
+            animation-duration: 1s
+            animation-delay: 400ms
+            animation-fill-mode: forwards
+        .fadeInTopRight
+            animation: fadeInTopRight
+            animation-duration: 1s
+            animation-delay: 400ms
+            animation-fill-mode: forwards
+        .moveInRight
+            animation: moveInRight 1.5s
+            animation-timing-function: ease-out
+        .moveInLeft
+            animation: moveInLeft 1.5s
+            animation-timing-function: ease-out
+        .backInDown
+            -webkit-animation: backInDown 1.5s
+            animation: backInDown 1s
+            -webkit-animation-timing-function: ease-out
+            animation-timing-function: ease-out
+        .flipInX
+            -webkit-animation: flipInX 1.5s
+            animation: flipInX 1.5s
+            -webkit-animation-fill-mode: both
+            animation-fill-mode: both

@@ -1,0 +1,24 @@
+extends _layout.pug
+
+block var
+	- var title = 'Trang chu'
+	- var bodyClass = 'homepage'
+
+block main
+	.menu-fullscreen
+		.close-button
+			.icon-close Close
+	#fake-header-open
+		.open-button
+			span Menu
+		
+	.full-page
+		include ../components/home/h-1/index.pug
+		include ../components/home/h-2/index.pug
+		include ../components/home/h-3/index.pug
+		include ../components/home/h-4/index.pug
+		include ../components/home/h-5/index.pug
+		include ../components/home/h-6/index.pug
+		include ../components/home/h-7/index.pug
+		
+		//- include ../components/home/h-7/index.pug

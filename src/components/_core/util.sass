@@ -1,0 +1,357 @@
+.d-flex
+	display: flex
+.justify-between
+	justify-content: space-between
+.justify-center
+	justify-content: center
+.align-center
+	align-items: center
+.text-center
+	text-align: center
+.text-right
+	text-align: right
+.flex-wrap
+	flex-wrap: wrap
+.text-white
+	color: #ffffff
+.button-prev, .button-next
+	cursor: pointer
+.line-bottom
+	border-bottom: 1px solid rgba($main, 0.28)
+.lcl
+	overflow: hidden
+	display: -webkit-box
+	text-overflow: ellipsis
+	-webkit-box-orient: vertical
+
+	&-1
+		-webkit-line-clamp: 1
+
+
+	&-2
+		-webkit-line-clamp: 2
+
+	&-3
+		-webkit-line-clamp: 3
+
+	&-4
+		-webkit-line-clamp: 4
+.view-more
+	display: flex
+	justify-content: center
+	.icon-link
+		width: 43px
+		height: 43px
+		border: 2px solid #ffffff
+		display: flex
+		align-items: center
+		justify-content: center
+		border-radius: 50%
+		margin-top: 10px
+		transition: .3s all  ease-in-out
+		&:hover
+			background-color: #fff
+			em
+				color: black
+		&.black
+			border: 2px solid black
+			&:hover
+				transform: translateX(-3px)
+		em
+			color: white
+			transition: .3s all  ease-in-out
+.tuyendung,.list-post, .post-detail
+	#pagebanner .box-text
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		max-width: 500px
+		width: 100%
+		.title-line
+			text-align: center
+			position: relative
+			padding-bottom: 3px
+			&::before
+				content: ''
+				position: absolute
+				bottom: 0
+				left: 50%
+				transform: translateX(-50%)
+				width: 179px
+				height: 3px
+				background-color: #fff
+		.title-small,.desc
+			color: #ffffff
+			font-size: r(20px)
+			font-weight: 400
+			line-height: 32px
+			text-align: center
+			padding-top: 5px
+			text-transform: none
+			max-width: 455px
+.circle
+	overflow: hidden
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+.wrap-gallery-thumb
+	position: absolute
+	bottom: 30px
+	max-width: 972px
+	width: 100%
+	left: 5%
+	background-color: $main
+	border-radius: 0 40px
+	height: 164px
+	padding: 0 35px
+	z-index: 2
+	@media screen and ( max-width: 1198.98px )
+		left: 50%
+		transform: translateX(-50%)
+	@media screen and ( max-width: 768px )
+		max-width: 85%
+		padding: 0 25px
+	.gallery-thumbs-product
+		// max-width: 863px
+		margin-top: -35px
+		.swiper-slide
+			cursor: pointer
+			width: auto
+			.wrapper
+				position: relative
+				.bg-slide-service
+					border-radius: 0 30px 0 30px
+					height: 165px
+					padding-top: 36px
+					padding-left: 30px
+					overflow: hidden
+					position: relative
+					border: 1px solid #707070
+					transition: .3s all  ease-in-out
+					backdrop-filter: blur(25px)
+					&::before
+						position: absolute
+						content: ''
+						width: 100%
+						height: 100%
+						border-radius: 0 30px 0 30px
+						overflow: hidden
+						background: rgba(255, 255, 255, 0.25)
+						backdrop-filter: blur(25px)
+						top: 0
+						left: 0
+					.title-slide
+						color: #1a1a1a
+						font-size: r(28px)
+						font-weight: 700
+						font-style: normal
+						letter-spacing: normal
+						text-align: left
+						padding-top: 22px
+						padding-left: 6px
+						text-transform: uppercase
+						position: relative
+						line-height: 1.2
+						&::before
+							content: ''
+							position: absolute
+							top: 0
+							left: 8px
+							width: 125px
+							height: 5px
+							background: #e98727
+						@media screen and ( max-width: 1024.98px )
+							font-size: r(25px)
+						@media screen and ( max-width: 768px )
+							font-size: r(22px)
+		.swiper-slide-thumb-active
+			.wrapper
+				.bg-slide-service
+					.title-slide
+						color: #ffffff
+.frm-btn-reset
+	display: none
+.qupload
+	flex: 0 0 calc( 50% - 30px )!important
+	margin: 0 auto
+	border-radius: 5px
+	border: 1px solid #707070
+	background-color: #ffffff
+	display: flex
+	justify-content: space-between
+	align-items: center
+	@media screen and ( max-width: 768px )
+		flex: 0 0 calc( 100% - 30px )!important
+		height: 86px
+	label
+		color: #000000
+		font-size: r(20px)
+		font-weight: 400
+	.RadUpload
+		width: fit-content
+		.ruFileWrap
+			width: 146px
+			height: 54px
+			border-radius: 5px
+			background-color: #727272
+		.ruBrowse
+			width: 146px
+			height: 54px
+			border-radius: 5px
+			background-color: #727272
+			color: #ffffff
+			font-size: r(20px)
+			font-weight: 400
+			text-transform: uppercase
+.btn-view-more
+	transition: .3s all  ease-in-out
+	a
+		transition: .3s all  ease-in-out
+		&:hover
+			color: $main!important
+			img
+				background-color: $main
+		img
+			transition: .3s all  ease-in-out
+		&:hover
+			img
+				margin-left: 5px!important
+span.fa-exclamation-triangle
+	color: #b10e02
+	&::before
+		margin-right: 10px
+// .full-page
+// 	.relative.Module
+// 		@media screen and ( min-width: 1200px )
+// 			display: flex
+// 			align-items: center
+// 			justify-content: center
+	// .home-2,.home-3,.home-5,.home-6
+.full-page .home-2>div>.Module
+	@media screen and ( min-width: 1200px )
+		display: flex
+		align-items: center
+		justify-content: center
+.full-page .home-3>div>.Module
+	@media screen and ( min-width: 1200px )
+		display: flex
+		align-items: center
+		justify-content: center
+.full-page .home-5>div>.Module
+	@media screen and ( min-width: 1200px )
+		display: flex
+		align-items: center
+		justify-content: center
+.full-page .home-6>div>.Module
+	@media screen and ( min-width: 1200px )
+		display: flex
+		align-items: center
+		justify-content: center
+.full-page .home-7>div>.Module
+	@media screen and ( min-width: 1200px )
+		display: flex
+		align-items: center
+		justify-content: center
+.full-page .ModuleContent
+	width: 100%
+.wrap-table-main
+	overflow: auto
+	table
+		width: 700px!important
+.animation-zoom-img
+	width: 100vw!important
+	height: 100vh!important
+	position: fixed!important
+	left: 0!important
+	top: 0!important
+	opacity: 1!important
+// .full-screen
+// 	height: 100vh
+// 	z-index: 100
+// 	margin: 0
+// 	border-radius: 0
+#fsm_actual
+	transition: .3s all  ease-in-out
+	z-index: -1
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+		transition: .3s all  ease-in-out
+	.title
+		display: none
+.growing
+	transition: .3s all  ease-in-out
+.sw-index
+	z-index: -1
+.hidden-image
+	display: none
+@keyframes testani
+	0%
+		opacity: 0
+	100%
+		opacity: 1
+// .overlay-background
+// 	position: relative
+// 	&::before
+// 		content: ''
+// 		position: absolute
+// 		top: 0
+// 		left: 0
+// 		width: 100%
+// 		height: 100%
+// 		background-color: #000
+// 		opacity: 0
+// 		z-index: -1
+// 		transition: .9s all  ease-in-out
+// 	&.active
+// 		&::before
+// 			opacity: 1
+.inner-date
+	height: 24px
+	width: 96px
+	background-color: $main
+	position: absolute
+	transform: rotate(-90deg)
+	transform-origin: 0 0
+	letter-spacing: 1.3px
+	color: $white
+	font-size: 13px
+	text-align: center
+	transition: .3s all
+.seemore
+	position: relative
+	text-transform: uppercase
+	font-size: 12px
+	font-weight: 700
+	color: $main
+	letter-spacing: 2.4px
+	display: inline-block
+	margin-top: r(30px)
+	transition: .3s all
+	&::before
+		content: ""
+		position: absolute
+		right: -25px
+		top: 50%
+		transform: translateY(-50%)
+		width: 15px
+		height: 1px
+		background-color: $main
+	&:hover
+		color: $main-2
+		&::before
+			background-color: $main-2
+.des
+	color: $color-66
+	line-height: r(24px)
+	&.white
+		color: $white
+.section
+	padding: r(60px) 0 r(80px)
+	@media screen and ( max-width: 1023.9px )
+		padding: r(30px) 0
+
+	

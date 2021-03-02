@@ -1,0 +1,64 @@
+section.section.tong-quan(setBackground="./img/gioi-thieu/bg-1.png")
+    .container 
+        .primary-nav
+            ul
+                li.active
+                    a(href="") Giới thiệu tổng quan 
+                li
+                    a(href="") Giới thiệu tổng quan 
+                li
+                    a(href="") Giới thiệu tổng quan
+        .title-center 
+            .section-title Giới thiệu tổng quan
+        .des Được hình thành từ hai đơn vị nòng cốt: Công ty Cổ phần Đầu tư Kinh doanh BĐS Star Beach và Công ty Cổ phần Đầu tư Thương mại Dịch vụ Địa ốc Thái Dương. Tập đoàn bất động sản TLM chuyên hoạt động trong lĩnh vực Đầu tư và phát triển bất động sản phân khúc trung – cao cấp.
+        .img 
+            img.lazyload(data-src="./img/gioi-thieu/1.png")
+section.section.tong-quan-1(setBackground="./img/gioi-thieu/bg-2.png")
+    .container
+        .row 
+            .col-lg-6.col-md-12
+                .wrap-left
+                    .wrap-top
+                        .section-title Tầm nhìn
+                        .des Trở thành nhà phát triển bất động sản hàng đầu việt nam, thương hiệu  uy tín và đẳng cấp.
+                    .wrap-bottom 
+                        .section-title Sứ mệnh
+                        -for(i=1; i<6; i++)
+                            .item 
+                                .icon 
+                                    img.lazyload(data-src="./img/gioi-thieu/icon-"+i+".png")
+                                .content 
+                                    .title-small.bold Đối với cổ đông:
+                                    .des Tạo ra giá trị gia tăng bền vững đối với mỗi đồng vốn của cổ đông.
+section.section.tong-quan-2(setBackground="./img/gioi-thieu/bg-3.png")
+    .container
+        .title-center 
+            .section-title Lịch sử phát triển
+        .box-timeline
+            -for(i=0; i<3; i++)
+                .item-timeline
+                    .wrap-content
+                        .title-lg 2012
+                        .des Mang lại quyền lợi cao nhất cho đối tác hợp tác (win – win).
+section.section.tong-quan-3(setBackground="./img/gioi-thieu/bg-4.jpg")
+    .container
+        .title-center 
+            .section-title Sơ đồ tổ chức 
+        .text-center
+            img.lazyload(data-src="./img/gioi-thieu/so-do.jpg")
+section.section.tong-quan-4(setBackground="./img/gioi-thieu/bg-5.png")
+    .container
+        .title-center 
+            .section-title.white Best CSR Developer 2019
+        .des.white.text-center Tập đoàn Bất động sản TLM đã đạt cú đúp giải thưởng “Nhà phát triển bất động sản xanh tốt nhất Việt Nam” và “Doanh nghiệp thực hiện trách nhiệm xã hội tốt nhất Việt Nam” trong khuôn khổ giải thưởng bất động sản uy tín Dot Property Vietnam 2019.
+        .swiper-tong-quan
+            .swiper-container 
+                .swiper-wrapper 
+                    -for(i=0; i<5; i++)
+                        .swiper-slide
+                            .item 
+                                a(href="").img 
+                                    img.lazyload(data-src="./img/gioi-thieu/2.png")
+            .wrap-button
+                .button-next.gray
+                .button-prev.gray

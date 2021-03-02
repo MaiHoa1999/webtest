@@ -1,0 +1,202 @@
+.home-index3
+	background-color: #fff
+	position: relative
+	overflow: hidden
+	padding: 0
+
+
+	
+	.box-wrap
+		width: 100%
+		height: 100%
+		position: relative
+		// margin-top: -50px
+		.box-text
+			position: absolute
+			left: 18%
+			top: 50%
+			background: $main
+			width: 430px
+			min-height: 360px
+			opacity: 0.9
+			padding: 40px
+			transform: translateY(-50%)
+			
+			.heading
+				font-size: 18px
+				color: $white
+				z-index: 3
+				text-transform: uppercase
+			.desc
+				font-size: r(18px)
+				font-weight: 300
+				color: $white
+				+line(3)
+				margin-bottom: r(30px)
+				line-height: r(30px)
+		
+	.box-img
+		width: 100%
+		height: 100%
+		.img
+			width: 100%
+			height: 100%
+			img
+				width: 100%
+				
+				height: 100%
+				object-fit: cover
+
+
+	.slider
+		position: relative
+		.button
+			width: 100px
+			margin-left: 42%
+			.button-prev, .button-next
+				background: #000
+				opacity: 0.6
+				width: 60px
+				height: 60px
+				position: absolute
+				display: flex
+				align-items: center
+				justify-content: center
+				
+				top: 82%
+				z-index: 999
+				transform: translateY(-50%)
+				i
+					font-size: 30px
+					color: $white
+				&:hover
+					background: $main
+			.button-prev
+				left: 38%
+	
+
+
+			
+
+	// .container
+	// 	position: relative
+	// 	z-index: 3
+	// &:before
+	// 	content: ''
+	// 	background-color: #e98727
+	// 	width: 100%
+	// 	height: 30vh
+	// 	position: absolute
+	// 	top: -100%
+	// 	left: 0
+	// 	transition: .7s all  ease-in-out
+	// 	opacity: 1
+	// 	top: 0
+	// 	z-index: 1
+	// 	@media screen and ( max-width: 1200px )
+	// 		opacity: 1
+	// 		top: 0
+	// &.down-scroll
+	// 	@media screen and ( min-width: 1200px )
+	// 		&::before
+	// 			top: -100%
+	// 			opacity: 0
+	// // .img-big
+	// 	margin-top: 40px
+	// 	width: 100%
+	// 	height: 370px
+	// 	overflow: hidden
+	// 	padding-right: 90px
+	// 	border-radius: 0 40px 0px 40px
+	// 	@media screen and ( max-width: 1200px )
+	// 		padding-right: 0
+	// 	@media screen and ( max-width: 768px )
+	// 		display: none
+	// 	img
+	// 		width: 100%
+	// 		height: 100%
+	// 		border-radius: 0 40px 0px 40px
+	// 		overflow: hidden
+	// 		object-fit: cover
+	// .wrap-post-small
+	// 	margin-top: -260px
+	// 	@media screen and ( max-width: 768px )
+	// 		margin-top: 50px
+	// 	.wrap-text
+	// 		@media screen and ( max-width: 1024px )
+	// 			order: 2
+	// 	@media only screen and (min-width : 1200px) and (height : 675px)
+	// 		margin-top: -148px
+	// 	@media (min-width: 1024px)
+	// 		.col-lg-3
+	// 			flex: 0 0 33.33%
+	// 			max-width: 33.33%
+	// 			&.col-md-12
+	// 				flex: 0 0 100%
+	// 				max-width: 100%
+	// 				order: 2
+	// 	@media (min-width: 1200px)
+	// 		.col-lg-3
+	// 			flex: 0 0 25%
+	// 			max-width: 25%
+	// 			&.col-md-12
+	// 				flex: 0 0 25%
+	// 				max-width: 25%
+	// 				order: 0
+	// 	.box-item
+	// 		width: 100%
+	// 		height: 607px
+	// 		border-radius: 0 30px 0px 30px
+	// 		overflow: hidden
+	// 		position: relative
+	// 		display: block
+	// 		@media only screen and (min-width : 1200px) and (max-height : 768px)
+	// 			height: 500px
+	// 		@media only screen and (min-width : 1200px) and (height : 675px)
+	// 			height: 390px
+	// 		@media screen and ( max-width: 1200px )
+	// 			height: auto
+	// 		@media screen and ( max-width: 768px )
+	// 			height: 300px
+	// 		img
+	// 			width: 100%
+	// 			height: 100%
+	// 			object-fit: cover
+	// 		.text
+	// 			color: #ffffff
+	// 			font-size: 1.8rem
+	// 			font-weight: 700
+	// 			line-height: 1.2
+	// 			position: absolute
+	// 			bottom: 30px
+	// 			width: 100%
+	// 			text-align: center
+	// 			@media screen and ( max-width: 992px )
+	// 				font-size: r(30px)
+	// 		&.box-img
+	// 			@media screen and ( max-width: 768px )
+	// 				margin-bottom: 30px
+	// 		&.box-text
+	// 			display: flex
+	// 			flex-direction: column
+	// 			justify-content: flex-end
+	// 			border-radius: 0!important
+	// 			@media screen and ( max-width: 1200px )
+	// 				margin-top: 20px
+	// 			@media screen and ( max-width: 768px )
+	// 				height: auto
+	// 			.mota
+	// 				color: #000000
+	// 				font-size: r(20px)
+	// 				font-weight: 400
+	// 				letter-spacing: 0.4px
+	// 				line-height: 32px
+	// 				text-align: left
+	// 				@media screen and ( max-width: 1300px )
+	// 					+rgtext(6)
+	// 				@media screen and ( max-width: 1600px )
+	// 					+rgtext(8)
+	// 				@media only screen and (min-width : 1200px) and (max-height : 768px)
+	// 					+rgtext(5)
+
+

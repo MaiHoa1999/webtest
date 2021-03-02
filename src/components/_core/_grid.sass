@@ -1,0 +1,119 @@
+$layout: 1920px !default
+$container: 1410px !default
+$colCount: 12 !default
+$offset: 15px !default
+$grid-breakpoints: (sm: 576px, md: 768px, lg: 1024px, xl: 1280px) !default
+$container-breakpoints: (sm: 540px, md: 720px, lg: 960px, xl: 1020px) !default
+body
+	max-width: $layout
+	margin-left: auto
+	margin-right: auto
+.container-16
+	max-width: 100%
+	width: calc(100% + 10px)
+	padding-right: $offset * 1
+	padding-left: $offset * 1
+	margin-left: auto
+	margin-right: auto
+.container
+	padding-right: $offset * 1
+	padding-left: $offset * 1
+	margin-left: auto
+	margin-right: auto
+	max-width: 100%
+	width: 100%
+	// max-width: $container + ($offset * 2)
+@media(min-width: 576px)
+	.container,.container-16
+		max-width: 540px
+		padding-right: $offset
+		padding-left: $offset
+@media(min-width: 768px)
+	.container,.container-16
+		max-width: 720px
+@media (min-width: 992px)
+	.container,.container-16
+		max-width: 960px
+@media(min-width: 1024px)
+	.container,.container-16
+		max-width: 960px
+@media(min-width: 1200px)
+	.container,.container-16
+		max-width: 1140px
+@media(min-width: 1280px)
+	.container
+		max-width: 1260px
+	.container-16
+		max-width: 1260px
+@media(min-width: 1600px)
+	.container
+		max-width: $container + ($offset * 2)
+	.container-16
+		max-width: 1688px + ($offset * 2)
+.container-fluid
+	width: 100%
+	padding-right: $offset
+	padding-left: $offset
+	margin-right: auto
+	margin-left: auto
+
+.row
+	display: flex
+	flex-wrap: wrap
+	margin-left: -$offset
+	margin-right: -$offset
+
+.no-gutters
+	margin-left: 0
+	margin-right: 0
+
+.no-gutters>*,
+.no-gutters>[class*="col-"]
+	padding-left: 0
+	padding-right: 0
+
+[class*="col-"]
+	position: relative
+	width: 100%
+	padding-right: $offset
+	padding-left: $offset
+
+.col
+	-ms-flex-preferred-size: 0
+	flex-basis: 0
+	-ms-flex-positive: 1
+	flex-grow: 1
+	max-width: 100%
+
+.col-auto
+	-ms-flex: 0 0 auto
+	flex: 0 0 auto
+	width: auto
+	max-width: 100%
+
+@for $col from 1 through $colCount
+	.col-#{$col}
+		-ms-flex: 0 0 (100% / $colCount * $col)
+		flex: 0 0 (100% / $colCount * $col)
+		max-width: (100% / $colCount * $col)
+
+@each $bp, $value in $grid-breakpoints
+	@media (min-width: #{$value})
+		.col-#{$bp}
+			-ms-flex-preferred-size: 0
+			flex-basis: 0
+			-ms-flex-positive: 1
+			flex-grow: 1
+			max-width: 100%
+		.col-#{$bp}-auto
+			-ms-flex: 0 0 auto
+			flex: 0 0 auto
+			width: auto
+			max-width: 100%
+		@for $col from 1 through $colCount
+			.col-#{$bp}-#{$col}
+				-ms-flex: 0 0 (100% / $colCount * $col)
+				flex: 0 0 (100% / $colCount * $col)
+				max-width: (100% / $colCount * $col)
+
+

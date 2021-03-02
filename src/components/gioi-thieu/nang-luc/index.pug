@@ -1,0 +1,23 @@
+section.section.nang-luc(setBackground="./img/gioi-thieu/bg-6.jpg")
+    .container
+        .primary-nav
+            ul
+                li.active
+                    a(href="") Giới thiệu tổng quan 
+                li
+                    a(href="") Giới thiệu tổng quan 
+                li
+                    a(href="") Giới thiệu tổng quan
+        .title-center 
+            .section-title Hồ sơ năng lực
+        .swiper-nang-luc
+            .swiper-container 
+                .swiper-wrapper 
+                    -for(i=0; i<5; i++)
+                        .swiper-slide
+                            .item 
+                                a(href="").img 
+                                    img.lazyload(data-src="./img/gioi-thieu/3.png")
+            .wrap-button
+                .button-next
+                .button-prev

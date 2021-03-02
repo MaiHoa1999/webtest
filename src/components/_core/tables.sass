@@ -1,0 +1,78 @@
+.menu-list-tablets
+	padding-top: 30px
+	display: flex
+	align-items: center
+	justify-content: space-around
+	flex-wrap: wrap
+	border-bottom: 1px solid rgba($main, 0.28)
+	li
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 20px
+		a
+			font-size: r(22px)
+			font-weight: 400
+			// color: $gray
+			transition: .2s ease-in-out all
+			text-transform: uppercase
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				top: 100%
+				left: 0
+				background: $main
+				width: 0
+				height: 2px
+			&:hover
+				// text-shadow: 0.7px 0 0 rgba($gray, 1)
+				&::before
+					width: 100%
+		&.active
+			a
+				text-shadow: 0.7px 0 0 #606060
+				&::before
+					width: 100%
+@media screen and ( min-width: 768px )
+	.menu-list-tablets
+		justify-content: center
+		padding-top: 40px
+		li
+			width: auto
+			margin: 0 5%
+			margin-bottom: 20px
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				top: 50%
+				right: -35%
+				transform: translateY(-50%)
+				background: rgba($main, 0.28)
+				width: 1px
+				height: 40px
+			&:last-child
+				&::before
+					display: none
+			a
+				font-size: r(22px)
+@media screen and ( min-width: 1024px )
+	.menu-list-tablets
+		padding-top: 50px
+		li
+			margin-bottom: 35px
+			&::before
+				height: 50px
+@media screen and ( min-width: 1280px )
+	.menu-list-tablets
+		li
+			margin: 0 165px
+			margin-bottom: 35px
+			&:first-child
+				margin-left: 0
+			&:last-child
+				margin-right: 0
+			&::before
+				height: 57px
+				right: -165px
