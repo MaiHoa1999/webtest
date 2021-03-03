@@ -309,20 +309,19 @@ function mySwiperInit() {
     let home3Slide = new Swiper('.home-index3 .swiper-container', {
         slidesPerView: 1,
         slidesPerColumnFill: "row",
+        observer: true,
+		observeParents: true,
         loop: true,
-        speed: 1000,
-            autoplay: {
-                delay: 2500,
-                // disableOnInteraction: false,
-            },
+        speed: 1500,
+        autoplay: {
+            delay: 5500,
+            // disableOnInteraction: false,
+        },
         navigation: {
-            nextEl: '.home-index3 .button-next',
-            prevEl: '.home-index3 .button-prev',
+            nextEl: '.home-index3 .slider .button .button-next',
+            prevEl: '.home-index3 .slider .button .button-prev',
             },
-        // navigation: {
-        //   nextEl: '.home-index3 .slider .button .button-next',
-        //   prevEl: '.home-index3 .slider .button .button-prev',
-        // },
+      
         
       });
       var swiperhome8 = new Swiper('.home-8 .swiper-container', {

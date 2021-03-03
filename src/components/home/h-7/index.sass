@@ -17,11 +17,17 @@
                 font-size: 18px
                 text-transform: uppercase
                 padding-bottom: 20px
+                @media(max-width: 576px)
+                    color: $main
+
 
             .info
                 display: flex
                 align-items: center
                 color: $white
+                @media(max-width: 576px)
+                    color: $main
+
                 i
                     font-size: 24px
                 
@@ -33,6 +39,7 @@
                 display: flex
                 align-items: center
                 .item
+                    
                     i
                         color: $white
                         font-size: 18px
@@ -40,6 +47,9 @@
                         border: 1px solid $white
                         padding: 10px
                         border-radius: 50%
+                        @media(max-width: 576px)
+                            background: $main
+                            
                     &:hover
                         i
                             color: $main-2

@@ -1,5 +1,7 @@
+
 .wrap-slide-s4
 	display: flex
+	flex-wrap: wrap
 	.swiper-container
 		width: 100%
 		height: 100%
@@ -8,6 +10,13 @@
 		max-width: 35%!important
 		background: $main
 		padding: 70px 50px 0 100px
+		flex-wrap: wrap
+		padding-bottom: 30px
+		@media(max-width: 768px)
+			flex: 0 0 100%!important
+			max-width: 100%!important
+			padding: 60px 50px 30px 50px
+
 		.desc
 			color: $white
 			font-size: 18px
@@ -20,6 +29,11 @@
 		max-width: 65%!important
 		display: flex
 		justify-content: center
+		
+		@media(max-width: 768px)
+			flex: 0 0 100%!important
+			width: 100%
+			max-width: 100%!important
 		.wrapper
 			height: 100%
 			position: relative
@@ -29,13 +43,25 @@
 				img
 					width: 100%
 					height: 100%
+					
 					object-fit: cover
-			
+					@media(max-width: 768px)
+						min-height: 600px	
+					@media(max-width: 576px)
+						
+				
+						min-height: 400px	
 
 
 	.swiper-slide.swiper-slide-active
 		flex: 0 0 68.649% !important
 		width: 68.649% !important
+		@media(max-width: 768px)
+			width: 100% !important
+			flex: 0 0 100% !important
+		@media(max-width: 576px)
+			width: 100% !important
+			flex: 0 0 100% !important
 		.box-info
 			position: absolute
 			left: 0
@@ -84,6 +110,12 @@
 	.swiper-slide
 		flex: 0 0 15.6755% !important
 		width: 15.6755% !important
+		// @media(max-width: 768px)
+		// 	width: 100% !important
+		// 	flex: 0 0 100% !important
+		// @media(max-width: 576px)
+		// 	width: 100% !important
+		// 	flex: 0 0 100% !important
 		.btn-wrap
 			display: none
 		.box-info

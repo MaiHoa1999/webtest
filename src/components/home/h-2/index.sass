@@ -1,138 +1,73 @@
 .home-2
-    padding: 0
+    padding: 50px 0
     background-size: 105% 105%!important
     overflow: hidden
-    // .container
-    //     max-width: 600px
-    .wrap-box
-        display: flex
-        justify-content: center
-        height: 100%
-      
-        .wrap-left
-            height: 100%
-            display: flex
-            justify-content: center
-            flex-direction: column
-            max-width: 65%
-            .section-title
-                margin-top: r(30px)
+    
+   
+    .box-text
+        @media(max-width: 768px)
+            margin-bottom: 30px
+            padding-left: 60px
+        .des
+            text-align: justify
+            font-size: 22px
+            line-height: 1.7
+            font-weight: 300
+            color: $color-33
+            +line(4)
+            @media(max-width: 576px)
+                font-size: 15px
+        .list
+            ul
+                display: block
+                margin-left: 0
+                li
+                    display: flex
+                    align-items: center
+                    padding: 10px 0
+                    .img
+                        margin-right: 35px
+                        
+                        img
+                            width: 100%
+                            height: 100%
+                            object-fit: cover
+                    .title-sub
+            
+                        span
+                            font-size: 60px
+                            font-weight: 600
+                            color: $main-2
+                            @media(max-width: 576px)
+                                font-size: 40px
+                        p
+                            font-size: 18px
+                            color: $main
+                            font-weight: 600
+                            margin-top: -20px
+                            @media(max-width: 576px)
+                                font-size: 15px
     .wrap-right
         width: 100%
         height: 100%
-        max-width: 65%
-        .img
-            width: 567px
-            height: 775px
-            display: flex
-            align-items: center
-            justify-content: center
-                
-    .des
-        text-align: justify
-        font-size: 22px
-        line-height: 1.7
-        font-weight: 300
-        color: $color-33
-        +line(4)
-        @media only screen and (min-width : 1200px) and (height : 675px)
-            p
-                +rgtext(2)
-        @media only screen and (min-width : 1200px) and (height : 567px)
-            p
-                +rgtext(2)
-        @media only screen and (min-width : 1200px) and (max-height : 768px)
-            margin-top: 15px
-    .list
-        ul
-            display: block
-            margin-left: 0
-            li
-                display: flex
-                align-items: center
-                padding: 10px 0
-                .img
-                   
-                    margin-right: 35px
-                    img
-                        width: 100%
-                        height: 100%
-                        object-fit: cover
-        .title-sub
+        max-width: 80%
+        display: flex
+        align-content: flex-end
+        @media(max-width: 768px)
+            max-width: 100%
             
-            span
-                font-size: 60px
-                font-weight: 600
-                color: $main-2
-            p
-                font-size: 18px
-                color: $main
-                font-weight: 600
-                margin-top: -20px
-    // .wrap-img
-    //     margin-top: 25px
-    //     display: flex
-    //     align-items: center
-    //     justify-content: center
-    //     @media screen and ( max-width: 768px )
-    //         flex-wrap: wrap
-    //     .img-big, .img-small
-    //         margin: 0 6.5px
-    //         @media screen and ( max-width: 768px )
-    //             margin: 0
-    //         img
-    //             width: 100%
-    //             height: 100%
-    //             object-fit: cover
-    //     .img-big
-    //         width: 518px
-    //         height: 471px - 30px
-    //         @media screen and ( max-width: 1024px )
-    //             height: auto
-    //         @media screen and ( max-width: 768px )
-    //             margin: 10px 0px
-    //         @media only screen and (min-width : 1200px) and (max-height : 768px)
-    //             height: 341px
-    //         @media only screen and (min-width : 1200px) and (height : 675px)
-    //             height: 280px
-    //         @media only screen and (min-width : 1200px) and (height : 567px)
-    //             height: 280px
-    //         @media only screen and (height : 567px)
-    //             height: 225px
-    //     .img-small
-    //         width: 433px
-    //         height: 391px - 30px
-    //         border-radius: 0px 40px 0px 40px
-    //         overflow: hidden
-    //         @media screen and ( max-width: 768px )
-    //             flex: 0 0 100%
-    //         @media screen and ( max-width: 1024px )
-    //             height: 250px
-    //         @media only screen and (min-width : 1200px) and (max-height : 768px)
-    //             height: 261px
-    //         @media only screen and (min-width : 1200px) and (height : 675px)
-    //             height: 220px
-    //         @media only screen and (min-width : 1200px) and (height : 567px)
-    //             height: 220px
-    //         @media only screen and (height : 567px)
-    //             height: 195px
-    // .text-2
-    //     @media screen and ( min-width: 1200px )
-    //         p
-    //             +rgtext(3)
-    //     @media screen and (min-width : 1200px) and ( max-height: 768px )
-    //         p
-    //             +rgtext(3)
-    //             margin-top: 0
-    //             padding-top: 12px
-    //     @media screen and (min-width : 1200px) and ( max-height: 675px )
-    //         p
-    //             +rgtext(2)
-    //             margin-top: 0
-    //             padding-top: 12px
-    //     @media screen and ( min-width: 1600px )
-    //         p
-    //             +rgtext(5)
+        .img
+            height: auto
+            @media(min-width: 769px)
+                transform: translateX(100px)
+            @media(max-width: 768px)
+                height: 500px
+           
+            
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
 
-
-// @media only screen and (width : 375px) and (height : 812px)
+            
+  
